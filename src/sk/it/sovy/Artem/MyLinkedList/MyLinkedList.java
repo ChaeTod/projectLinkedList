@@ -29,8 +29,10 @@ public class MyLinkedList {
     public void addToEnd(Node node) {
         if (node == null)
             return;
-        if (head == null)
+        if (head == null) {
             head = node;
+            return;
+        }
         else {
             Node tmp = head;
             while (tmp.getNext() != null) {

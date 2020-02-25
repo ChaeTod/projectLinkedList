@@ -118,9 +118,8 @@ class LinkedListTest {
 
         list.removeAll();
 
-        list.add(node_12, 42526);
+        list.add(node_12, 426);
         assertEquals(node_12, list.getHead());
-
     }
 
     @Test
