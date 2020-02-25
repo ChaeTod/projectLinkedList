@@ -22,6 +22,10 @@ public class MyLinkedList {
         }
     }
 
+    public Node getHead() {
+        return head;
+    }
+
     public void addToEnd(Node node) {
         if (node == null)
             return;
@@ -56,7 +60,7 @@ public class MyLinkedList {
         if (position <= 0)
             addToFront(node);
         else {
-            if (position >= getSize())
+            if (getSize() < position)
                 addToEnd(node);
             else {
                 Node tmp = head;
